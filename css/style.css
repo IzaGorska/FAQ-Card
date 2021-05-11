@@ -47,8 +47,12 @@ div.container h1 {
 }
 
 div.wrapper {
-    overflow: scroll;
+    overflow-y: auto;
+
 }
+::-webkit-scrollbar {
+    width: 5px;
+  }
 
 img.mobile {
     position: absolute;
@@ -58,6 +62,7 @@ img.mobile {
     margin-bottom: 100px;
 
 }
+
 img.desktop {
     display: none;
 }
@@ -94,7 +99,7 @@ div.wrapper div h4.bold {
 
 }
 
-.invisible{
+.invisible {
     display: none;
 
 }
@@ -105,7 +110,7 @@ div.wrapper div h4.bold {
 
 @media (min-width:1024px) {
     div.container {
-        flex-direction:row;
+        flex-direction: row;
         overflow: hidden;
         width: 70vw;
         height: 60vh;
@@ -115,6 +120,7 @@ div.wrapper div h4.bold {
     div.imgs {
         width: 50%;
     }
+
     img.mobile {
         display: none;
     }
@@ -122,30 +128,34 @@ div.wrapper div h4.bold {
     img.desktop {
         display: block;
     }
+
     img.pattern {
-       position: relative;
-       width: 160%;
-       height: 160%;
-       bottom: 105%;
-       right: 80%;
+        position: relative;
+        width: 160%;
+        height: 160%;
+        bottom: 105%;
+        right: 80%;
 
     }
+
     img.woman {
         position: relative;
         top: 15%;
         right: 17%;
         z-index: 1;
     }
+
     img.box {
-    position: absolute;
-    top: 45%;
-    left: 8%;
-    z-index: 2;
+        position: absolute;
+        top: 45%;
+        left: 8%;
+        z-index: 2;
     }
+
     div.container h1 {
-     position: absolute;
-     top: 15%;
-     left: 51%;
+        position: absolute;
+        top: 15%;
+        left: 51%;
     }
 
     div.wrapper {
